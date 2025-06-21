@@ -136,29 +136,3 @@ while True:
         print(f'Player 2 threw {player2.num2}')
         print(f'Total: {player2.num1 + player2.num2}')
         print(f'Player 2 is now on square {player2.pos}\n \n')
-
-    # print(f'Player 1 threw {player1.num1}')
-    # print(f'Player 1 threw {player1.num2}')
-    # print(f'Total: {player1.num1 + player1.num2}')
-    # print(f'Player 1 is now on square {player1.pos}\n')
-    # print(f'Player 2 threw {player2.num1}')
-    # print(f'Player 2 threw {player2.num2}')
-    # print(f'Total: {player2.num1 + player2.num2}')
-    # print(f'Player 2 is now on square {player2.pos}\n \n')
-
-# dice1 = dice(0)
-# dice2 = dice(0)
-
-# print(dice1.num)
-
-# dice1.throw_dice()
-# dice2.throw_dice()
-
-# print(f'Dice1: {dice1.num}')
-# print(f'Dice2: {dice2.num}')
-# print(f'Total: {dice1.num + dice2.num}')
-
-# if(dice1.num > 3):
-#     print(f'You threw a {dice1.num} which is a high number')
-# else:
-#     print(f'You threw a {dice1.num} which is a low number')
