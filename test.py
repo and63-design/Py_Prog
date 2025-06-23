@@ -1,34 +1,16 @@
 import unittest
-import main
+import main 
 
-class TestMain(unittest.TestCase):
-    def setUp(self):
-        print('About to test a function')
-        return super().setUp()
+class TestGame(unittest.TestCase):
+    def test_input(self):
+        #result = main.run_guess(5, 4)
+        result = main.run_guess(5, 5)
+        self.assertTrue(result)
     
-    def test_do_stuff(self):
-        test_param = 10
-        result = main.do_stuff(test_param)
-        self.assertEqual(result, 15)
-    
-    def test_do_stuff2(self):
-        test_param = ('astring')
-        result = main.do_stuff(test_param)
-        self.assertIsInstance(result, ValueError)
-    
-    def test_do_stuff3(self):
-        test_param = None
-        result = main.do_stuff(test_param)
-        self.assertEqual(result, 'Please enter a number')
-    
-    def test_do_stuff4(self):
-        test_param = ''
-        result = main.do_stuff(test_param)
-        self.assertEqual(result, 'Please enter a number')
-    
-    def tearDown(self):
-        print('Cleaning Up')
-        return super().tearDown()
-        
+    def test_input_invalid(self):
+        #result = main.run_guess(2, 5)
+        result = main.run_guess(15, 5)
+        self.assertIsNone(result)
+
 if __name__ == '__main__':
-    unittest.main()    
+        unittest.main()
